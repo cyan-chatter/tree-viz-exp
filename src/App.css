@@ -1,5 +1,32 @@
-.App {
-  text-align: center;
+.App{
+ font-family:'Lucida Sans'; 
+ display: grid;
+ grid-template-rows: [row-start] 0.1fr [row-start] auto [row-start] 0.8fr [row-start] auto [row-end]; 
+ grid-template-columns: [col-start] 0.1fr [col-start] 0.8fr [col-start] 0.1fr [col-end];
+ margin: auto;
+}
+
+.tree{
+  grid-row-start: row-start 3;
+  grid-row-end: row-start 4;
+  grid-column-start: col-start 2;
+  grid-column-end: col-start 3;
+  align-self: 'center';
+  min-width: 90vh;
+  min-height: 90vh;
+  display: grid;
+  grid-template-rows: [row-start2]auto [row-start2]0.9fr [row-start2]auto [row-end2];
+ /* grid-template-columns: [col-start2] auto [col-start2] 0.8fr [col-start2] auto [col-end2]; */
+}
+
+.svg{
+  height: 100%;
+  width: 100%;
+  /* grid-column-start: col-start2 2;
+  grid-column-end: col-start2 3;  */
+  grid-row-start: row-start2 2;
+  grid-row-end: row-start2 3;
+  overflow: visible;
 }
 
 .App-logo {
@@ -14,8 +41,11 @@
 }
 
 .App-header {
+  grid-row-start: row-start 1;
+  grid-row-end: row-start 2;
+  grid-column-start: col-start 2;
+  grid-column-end: col-start 3;
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
