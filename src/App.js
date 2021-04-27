@@ -33,7 +33,7 @@ const App = () => {
     <div className="App">   
     <h1 className="App-header">VISUALIZE</h1>
     <br/>
-    <button onClick={onClickHandler}> Fetch Again </button>
+    <button className="TempButton" onClick={onClickHandler}> Fetch Again </button>
     <TreeComponent dimensions= {dimensions} data={Data}/>
     </div>
   )

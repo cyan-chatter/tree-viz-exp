@@ -66,3 +66,13 @@
     transform: rotate(360deg);
   }
 }
+.TempButton{
+  background: white;
+  font-family: Impact, sans-serif;
+  margin: 10px 10px 10px 10px;
+  padding: 2px 2px 2px 2px;
+}
+.TempButton:hover{
+  cursor: pointer;
+  background: antiquewhite;
+}
